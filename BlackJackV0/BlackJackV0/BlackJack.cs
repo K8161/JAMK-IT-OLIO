@@ -8,6 +8,12 @@ namespace JAMK.IT
   {
         static void Main()
         {
+            //Blackjack();
+            JAMK.IT.Lotto.lottokone();
+        }
+
+        static void Blackjack()
+        {
             int myNumber;
             int theirNumber;
             string ex = "empty";
@@ -44,6 +50,8 @@ namespace JAMK.IT
                 }
                 System.Console.WriteLine("Want to play again? Enter number between 1-21 or x/exit to quit game: ");
                 ex = System.Console.ReadLine();
+
+
             } while (ex != "x" && ex != "exit");
       }
     }
